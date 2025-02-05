@@ -60,7 +60,6 @@ async function refineFinalSummary(summaries: string[], length: "short" | "medium
     long: "a comprehensive summary with key details.",
   };
 
-  console.log('lenght',lengthDescriptions[length])
 
   const aiResponse = await openai.chat.completions.create({
     model: "gpt-4-turbo",
